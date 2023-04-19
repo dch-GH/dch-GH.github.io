@@ -6,10 +6,14 @@ body {
 
 :visited {
     color: rgb(87, 62, 231);
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 :link {
     color: rgb(98, 110, 187);
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 video {
@@ -18,9 +22,8 @@ video {
 
 backplate {
     background-image: url(DSCF1731.jpg);
-    filter: blur(8px) brightness(0.8);
+    filter: blur(9px) brightness(1.2);
     position: fixed;
-    z-index: -1000;
     width: 100%;
     height: 100%;
     left: 0;
@@ -30,6 +33,7 @@ backplate {
 }
 
 main {
+    text-shadow: 4px 3px 7px rgb(51, 35, 13);
     position: absolute;
     width: 98%;
     height: 100%;
@@ -38,22 +42,25 @@ main {
 }
 
 inner {
-    color: cornsilk;
+    color: whitesmoke;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 inner>inner-top {
     background-color: rgba(26, 23, 23, 0.24);
-    backdrop-filter: blur(22px);
-    font-size: 20px;
-    margin: 8px;
-    padding: 2px;
+    backdrop-filter: blur(8px);
+    font-size: 25px;
+    padding: 8px;
     display: block;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 text-group {
     background-color: rgba(26, 23, 23, 0.24);
-    backdrop-filter: blur(22px);
+    backdrop-filter: blur(8px);
     font-size: 20px;
     margin: 8px;
     padding: 2px;
@@ -64,12 +71,15 @@ text-group>label {
     font-family: monospace;
     font-weight: bolder;
     font-size: 45px;
+    text-decoration: #e76f51 solid underline;
+    border-radius: 4px;
+    padding: 8px;
 }
 
 video-group {
     display: block;
-    background-color: rgba(26, 23, 23, 0.24);
-    backdrop-filter: blur(22px);
+    background-color: rgba(15, 10, 10, 0.24);
+    backdrop-filter: blur(8px);
     width: 45%;
     height: fit-content;
     padding: 16px;
@@ -79,6 +89,9 @@ video-group>label {
     font-family: monospace;
     font-weight: bolder;
     font-size: 45px;
+    text-decoration: #f4a261 solid underline;
+    border-radius: 4px;
+    padding: 8px;
 }
 
 video-group>p {
@@ -87,11 +100,15 @@ video-group>p {
 
 container {
     display: block;
-    background-color: rgba(88, 88, 128, 0.212);
-    border: 2px rgb(197, 188, 188) double;
-    border-radius: 8px;
+    /* background-color: rgba(126, 90, 66, 0.212); */
+    background-color: #26465338;
+    backdrop-filter: brightness(0.5);
+    /* background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.164)); */
+    border: 2px rgba(255, 166, 0, 0.445) double;
+    border-radius: 2px;
     margin: 7px;
     margin-bottom: 16px;
+    padding-bottom: 4px;
 }
 
 container>h2 {
@@ -102,6 +119,7 @@ container>h2 {
 
 container>p {
     font-size: medium;
+    padding: 4px;
 }
 
 double-group {
@@ -111,8 +129,25 @@ double-group {
     gap: 20px;
 }
 
+video {
+    border: 2px #2a9d8f solid;
+}
+
+screenshot {
+    pointer-events: all;
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+}
+
+.screenshot {
+    border: 2px #2a9d8f solid;
+    pointer-events: all;
+    cursor: pointer;
+}
+
 .screenshot:hover {
-    scale: 2;
+    scale: 1.2;
 }
 
 .footer {
