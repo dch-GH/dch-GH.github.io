@@ -8,12 +8,14 @@ body {
     color: rgb(87, 62, 231);
     font-weight: bolder;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
 }
 
 :link {
     color: rgb(98, 110, 187);
     font-weight: bolder;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
 }
 
 a.icon {
@@ -78,7 +80,8 @@ inner>inner-top>h1 {
 }
 
 container-group {
-    display: block;
+    display: flex;
+    flex-direction: column;
     background-color: rgba(15, 10, 10, 0.24);
     backdrop-filter: blur(8px) brightness(0.5);
     width: 45%;
@@ -95,12 +98,19 @@ container-group>label {
     color: skyblue;
 }
 
+container-group>sub-text {
+    font-size: smaller;
+}
+
 container {
-    display: block;
+    display: flex;
+    flex-direction: column;
     backdrop-filter: brightness(1.4);
     border-radius: 4px;
     margin: 20px;
     padding: 3px;
+    justify-content: center;
+    align-items: center;
 }
 
 container>project-title {
@@ -111,11 +121,8 @@ container>project-title {
     color: white;
 }
 
-container>media {
-    justify-content: center;
-    gap: 4px;
-    display: flex;
-    flex-direction: row;
+container>sub-text {
+    font-size: smaller;
 }
 
 container>p {
@@ -123,6 +130,15 @@ container>p {
     font-weight: 400;
     color: whitesmoke;
     padding: 4px;
+}
+
+container>media {
+    justify-content: center;
+    gap: 4px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 16px;
 }
 
 .flex {
