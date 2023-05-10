@@ -5,14 +5,14 @@ body {
 }
 
 :visited {
-    color: rgb(87, 62, 231);
+    color: rgb(187, 192, 240);
     font-weight: bolder;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: large;
 }
 
 :link {
-    color: rgb(98, 110, 187);
+    color: rgb(187, 192, 240);
     font-weight: bolder;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: large;
@@ -29,8 +29,9 @@ video {
 }
 
 backplate {
-    background-image: url(ocean.jpg);
-    filter: blur(4px) brightness(0.8);
+    background-color: #537895;
+    background-image: linear-gradient(-330deg, #537895 0%, #09203f 74%);
+
     position: fixed;
     width: 105%;
     height: 105%;
@@ -41,12 +42,13 @@ backplate {
 }
 
 main {
-    text-shadow: 4px 3px 7px rgb(51, 35, 13);
+    text-shadow: 3px 3px 7px rgba(31, 25, 25, 0.589);
     position: absolute;
     width: 98%;
     height: 100%;
     display: flex;
     flex-direction: column;
+    font-family: Inter, Roboto, sans-serif;
 }
 
 icon-bin {
@@ -71,26 +73,26 @@ inner>inner-top {
     margin: auto;
     margin-bottom: 16px;
     margin-top: 16px;
+    border: 2px #537895 solid;
+    border-radius: 4px;
 }
 
 inner>inner-top>h1 {
     margin: 2px;
     font-weight: bolder;
-    font-family: Roboto;
 }
 
 container-group {
     display: flex;
     flex-direction: column;
-    background-color: rgba(15, 10, 10, 0.24);
-    backdrop-filter: blur(8px) brightness(0.5);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.486), rgba(0, 0, 0, 0));
     width: 45%;
     height: fit-content;
     padding: 16px;
+    border-radius: 4px;
 }
 
 container-group>label {
-    font-family: Roboto, systeem-ui;
     font-weight: bolder;
     font-size: 45px;
     border-radius: 4px;
@@ -105,7 +107,7 @@ container-group>sub-text {
 container {
     display: flex;
     flex-direction: column;
-    backdrop-filter: brightness(1.4);
+    backdrop-filter: contrast(110%) brightness(1.3);
     border-radius: 4px;
     margin: 20px;
     padding: 3px;
@@ -114,7 +116,7 @@ container {
 }
 
 container>project-title {
-    font-family: Roboto, sans-serif;
+    font-family: monospace, sans-serif;
     font-weight: 900;
     font-size: 30px;
     margin: 5px;
