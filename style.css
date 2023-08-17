@@ -22,6 +22,7 @@ video {
 backplate {
     background-color: #537895;
     background-image: linear-gradient(-330deg, #537895 0%, #09203f 74%);
+    filter: brightness(0.3);
 
     position: fixed;
     width: 100%;
